@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,22 +14,106 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- font-awesome link -->
+    <script
+      src="https://kit.fontawesome.com/d2fcbb6384.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- custom style -->
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                primaryColor: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primaryColor: "#F85559",
+            },
+            fontFamily: {
+              lato: 'Lato',
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
+  <body class="font-lato">
     <!-- header section -->
-    <header></header>
+    <header>
+      <!-- navbar section -->
+      <nav
+        class="max-w-screen-xl mx-auto my-10 py-2 px-2 md:px-8 lg:px-10 bg-primaryColor rounded-[600px]"
+      >
+        <div class="navbar justify-start">
+          <div class="navbar-start lg:navbar-center">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+            <div class="lg:navbar-start hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li class="text-xl text-white"><a>Home</a></li>
+                <li class="text-xl text-white"><a>About Us</a></li>
+                <li class="text-xl text-white"><a>Shop</a></li>
+                <li class="text-xl text-white"><a>All Fruits</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="navbar-center -ml-10">
+            <img src="./img/logo.png" alt="Logo" class="pr-3" />
+            <h3
+              class="text-xl md:text-4xl font-semibold font-extrabold text-white normal-case"
+            >
+              Fruit Burst
+            </h3>
+          </div>
+
+          <div class="navbar-end relative">
+            <input
+              type="text"
+              placeholder="Search"
+              class="input input-bordered w-24 md:w-auto"
+            />
+            <i
+              class="fa-solid fa-magnifying-glass absolute top-4 right-2 lg:right-7"
+            ></i>
+          </div>
+        </div>
+      </nav>
+
+      <!-- banner section -->
+    </header>
 
     <!-- main section -->
     <main></main>
