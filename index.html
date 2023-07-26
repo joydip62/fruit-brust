@@ -39,6 +39,9 @@
             fontFamily: {
               lato: "Lato",
             },
+            backgroundImage: {
+              "hero-team": "linear-gradient(90deg, #121212B3 0%, rgba(18, 18, 18, 0.70) 100%),url('./img/team.png')" ,
+            },
           },
         },
       };
@@ -445,14 +448,18 @@
                 <div class="modal-action mx-auto text-center justify-center">
                   <!-- if there is a button in form, it will close the modal -->
                   <button class="btn">Close</button>
-                  <button class="btn bg-primaryColor text-white hover:text-black">Buy Now</button>
+                  <button
+                    class="btn bg-primaryColor text-white hover:text-black"
+                  >
+                    Buy Now
+                  </button>
                 </div>
               </form>
             </dialog>
           </div>
 
-           <div class="border-solid border-2 border-[#12121226] p-10 space-y-5">
-            <img src="./img/fruit7.png" alt="Fruit" class="m-auto"/>
+          <div class="border-solid border-2 border-[#12121226] p-10 space-y-5">
+            <img src="./img/fruit7.png" alt="Fruit" class="m-auto" />
             <h3 class="text-2xl font-extrabold">12.90$ - 18.85$</h3>
             <hr />
             <p>Orange</p>
@@ -510,9 +517,9 @@
                 class="bg-primaryColor mask mask-star-2 mask-half-2"
               />
             </div>
-            <br>
+            <br />
             <!-- Open the modal using ID.showModal() method -->
-             <button
+            <button
               class="text-primaryColor font-bold"
               onclick="my_modal_2.showModal()"
             >
@@ -581,14 +588,18 @@
                 <div class="modal-action mx-auto text-center justify-center">
                   <!-- if there is a button in form, it will close the modal -->
                   <button class="btn">Close</button>
-                  <button class="btn bg-primaryColor text-white hover:text-black">Buy Now</button>
+                  <button
+                    class="btn bg-primaryColor text-white hover:text-black"
+                  >
+                    Buy Now
+                  </button>
                 </div>
               </form>
             </dialog>
           </div>
 
           <div class="border-solid border-2 border-[#12121226] p-10 space-y-5">
-            <img src="./img/fruit8.png" alt="Fruit" class="m-auto"/>
+            <img src="./img/fruit8.png" alt="Fruit" class="m-auto" />
             <h3 class="text-2xl font-extrabold">12.90$ - 18.85$</h3>
             <hr />
             <p>Red Dragon</p>
@@ -646,9 +657,9 @@
                 class="bg-primaryColor mask mask-star-2 mask-half-2"
               />
             </div>
-            <br>
+            <br />
             <!-- Open the modal using ID.showModal() method -->
-             <button
+            <button
               class="text-primaryColor font-bold"
               onclick="my_modal_3.showModal()"
             >
@@ -717,14 +728,18 @@
                 <div class="modal-action mx-auto text-center justify-center">
                   <!-- if there is a button in form, it will close the modal -->
                   <button class="btn">Close</button>
-                  <button class="btn bg-primaryColor text-white hover:text-black">Buy Now</button>
+                  <button
+                    class="btn bg-primaryColor text-white hover:text-black"
+                  >
+                    Buy Now
+                  </button>
                 </div>
               </form>
             </dialog>
           </div>
 
           <div class="border-solid border-2 border-[#12121226] p-10 space-y-5">
-            <img src="./img/fruit9.png" alt="Fruit" class="m-auto"/>
+            <img src="./img/fruit9.png" alt="Fruit" class="m-auto" />
             <h3 class="text-2xl font-extrabold">12.90$ - 18.85$</h3>
             <hr />
             <p>Banana</p>
@@ -782,9 +797,9 @@
                 class="bg-primaryColor mask mask-star-2 mask-half-2"
               />
             </div>
-            <br>
+            <br />
             <!-- Open the modal using ID.showModal() method -->
-             <button
+            <button
               class="text-primaryColor font-bold"
               onclick="my_modal_4.showModal()"
             >
@@ -853,11 +868,80 @@
                 <div class="modal-action mx-auto text-center justify-center">
                   <!-- if there is a button in form, it will close the modal -->
                   <button class="btn">Close</button>
-                  <button class="btn bg-primaryColor text-white hover:text-black">Buy Now</button>
+                  <button
+                    class="btn bg-primaryColor text-white hover:text-black"
+                  >
+                    Buy Now
+                  </button>
                 </div>
               </form>
             </dialog>
           </div>
+        </div>
+
+        <button class="bg-primaryColor text-white mt-10 p-4 rounded-md">
+          Shop All
+        </button>
+      </section>
+
+      <!-- meet team section -->
+      <section
+        class="max-w-screen-xl mx-auto my-10 text-center bg-hero-team bg-no-repeat bg-cover bg-center p-10 md:p-20 lg:p-40"
+      >
+        <div class="space-y-3">
+          <h2 class="text-3xl md:text-4xl text-white font-extrabold">Meet the team section</h2>
+          <p class="text-white px-1 lg:px-40">
+            Contrary to popular belief, is not simply random text. It has roots
+            in a piece of classical Latin literature from 45 BC, making it over
+            2000 years old.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-10">
+          <div class="space-y-2">
+            <img src="./img/member1.png" alt="Member" class="m-auto" />
+            <h3 class="text-xl text-white font-extrabold">Awlad Hossain</h3>
+            <p class="text-white">Fruits Expert</p>
+            <div class="space-x-1">
+              <i class="fa-brands fa-facebook text-white"></i>
+              <i class="fa-brands fa-twitter text-white"></i>
+              <i class="fa-brands fa-linkedin text-white"></i>
+            </div>
+          </div>
+          
+          <div class="space-y-2">
+            <img src="./img/member2.png" alt="Member" class="m-auto" />
+            <h3 class="text-xl text-white font-extrabold">Safia Chowdhury</h3>
+            <p class="text-white">Fruits Expert</p>
+            <div class="space-x-1">
+              <i class="fa-brands fa-facebook text-white"></i>
+              <i class="fa-brands fa-twitter text-white"></i>
+              <i class="fa-brands fa-linkedin text-white"></i>
+            </div>
+          </div>
+
+          <div class="space-y-2">
+            <img src="./img/member3.png" alt="Member" class="m-auto" />
+            <h3 class="text-xl text-white font-extrabold">Rokib Hossain</h3>
+            <p class="text-white">Fruits Expert</p>
+            <div class="space-x-1">
+              <i class="fa-brands fa-facebook text-white"></i>
+              <i class="fa-brands fa-twitter text-white"></i>
+              <i class="fa-brands fa-linkedin text-white"></i>
+            </div>
+          </div>
+
+          <div class="space-y-2">
+            <img src="./img/member4.png" alt="Member" class="m-auto" />
+            <h3 class="text-xl text-white font-extrabold">Chaity</h3>
+            <p class="text-white">Fruits Expert</p>
+            <div class="space-x-1">
+              <i class="fa-brands fa-facebook text-white"></i>
+              <i class="fa-brands fa-twitter text-white"></i>
+              <i class="fa-brands fa-linkedin text-white"></i>
+            </div>
+          </div>
+
 
         </div>
       </section>
